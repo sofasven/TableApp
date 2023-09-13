@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		C7B8EC082AB2258600E64D4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B8EC072AB2258600E64D4A /* AppDelegate.swift */; };
 		C7B8EC0A2AB2258600E64D4A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B8EC092AB2258600E64D4A /* SceneDelegate.swift */; };
-		C7B8EC0C2AB2258600E64D4A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B8EC0B2AB2258600E64D4A /* ViewController.swift */; };
 		C7B8EC0F2AB2258600E64D4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7B8EC0D2AB2258600E64D4A /* Main.storyboard */; };
 		C7B8EC112AB2258800E64D4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7B8EC102AB2258800E64D4A /* Assets.xcassets */; };
 		C7B8EC142AB2258800E64D4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7B8EC122AB2258800E64D4A /* LaunchScreen.storyboard */; };
+		C7B8EC202AB2280B00E64D4A /* SecondTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B8EC1F2AB2280B00E64D4A /* SecondTVC.swift */; };
+		C7B8EC222AB2282500E64D4A /* FirstTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B8EC212AB2282500E64D4A /* FirstTVC.swift */; };
+		C7B8EC242AB228DD00E64D4A /* PersonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B8EC232AB228DD00E64D4A /* PersonModel.swift */; };
+		C7B8EC2A2AB2595200E64D4A /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B8EC292AB2595200E64D4A /* DataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C7B8EC042AB2258600E64D4A /* TableApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7B8EC072AB2258600E64D4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7B8EC092AB2258600E64D4A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C7B8EC0B2AB2258600E64D4A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C7B8EC0E2AB2258600E64D4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C7B8EC102AB2258800E64D4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C7B8EC132AB2258800E64D4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C7B8EC152AB2258800E64D4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7B8EC1F2AB2280B00E64D4A /* SecondTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTVC.swift; sourceTree = "<group>"; };
+		C7B8EC212AB2282500E64D4A /* FirstTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTVC.swift; sourceTree = "<group>"; };
+		C7B8EC232AB228DD00E64D4A /* PersonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonModel.swift; sourceTree = "<group>"; };
+		C7B8EC292AB2595200E64D4A /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,58 @@
 		C7B8EC062AB2258600E64D4A /* TableApp */ = {
 			isa = PBXGroup;
 			children = (
-				C7B8EC072AB2258600E64D4A /* AppDelegate.swift */,
-				C7B8EC092AB2258600E64D4A /* SceneDelegate.swift */,
-				C7B8EC0B2AB2258600E64D4A /* ViewController.swift */,
-				C7B8EC0D2AB2258600E64D4A /* Main.storyboard */,
+				C7B8EC282AB2592E00E64D4A /* DataService */,
+				C7B8EC1E2AB227B600E64D4A /* Models */,
+				C7B8EC1C2AB225DF00E64D4A /* Controllers */,
+				C7B8EC1D2AB225EC00E64D4A /* Views */,
 				C7B8EC102AB2258800E64D4A /* Assets.xcassets */,
-				C7B8EC122AB2258800E64D4A /* LaunchScreen.storyboard */,
 				C7B8EC152AB2258800E64D4A /* Info.plist */,
+				C7B8EC1B2AB225D200E64D4A /* App */,
 			);
 			path = TableApp;
+			sourceTree = "<group>";
+		};
+		C7B8EC1B2AB225D200E64D4A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C7B8EC072AB2258600E64D4A /* AppDelegate.swift */,
+				C7B8EC092AB2258600E64D4A /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		C7B8EC1C2AB225DF00E64D4A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C7B8EC212AB2282500E64D4A /* FirstTVC.swift */,
+				C7B8EC1F2AB2280B00E64D4A /* SecondTVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C7B8EC1D2AB225EC00E64D4A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C7B8EC0D2AB2258600E64D4A /* Main.storyboard */,
+				C7B8EC122AB2258800E64D4A /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C7B8EC1E2AB227B600E64D4A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C7B8EC232AB228DD00E64D4A /* PersonModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C7B8EC282AB2592E00E64D4A /* DataService */ = {
+			isa = PBXGroup;
+			children = (
+				C7B8EC292AB2595200E64D4A /* DataSource.swift */,
+			);
+			path = DataService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +187,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7B8EC0C2AB2258600E64D4A /* ViewController.swift in Sources */,
+				C7B8EC2A2AB2595200E64D4A /* DataSource.swift in Sources */,
 				C7B8EC082AB2258600E64D4A /* AppDelegate.swift in Sources */,
 				C7B8EC0A2AB2258600E64D4A /* SceneDelegate.swift in Sources */,
+				C7B8EC242AB228DD00E64D4A /* PersonModel.swift in Sources */,
+				C7B8EC222AB2282500E64D4A /* FirstTVC.swift in Sources */,
+				C7B8EC202AB2280B00E64D4A /* SecondTVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
